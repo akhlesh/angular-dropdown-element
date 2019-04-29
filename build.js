@@ -24,9 +24,9 @@ async function copyAndUpdateJson(){
         'dist/angular-element-dropdown/scripts.js',
     ]
     
-    await fs.ensureDir('dist/elements')
+    await fs.ensureDir('dist/package')
     
-    await concat(files, './dist/elements/index.js')
+    await concat(files, './dist/package/index.js')
     await copyAndUpdateJson();
     await fs.copy('./web-example', './dist/package/demo');
     await fs.copy('./src/dropdown', './dist/package/src');
