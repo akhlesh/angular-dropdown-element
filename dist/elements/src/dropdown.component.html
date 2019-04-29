@@ -1,0 +1,12 @@
+<div class="dropdown">
+  <div class="btn btn-outline-primary dropdown-toggle" tabindex="0" (click)="toggleMenu()" data-toggle="dropdown">
+    {{getSelectedLabel()}}
+  </div>
+  <div class="dropdown-menu"  [ngClass]="isOpen? 'show' : ''"> 
+    <div class="dropdown-list">
+      <app-dropdown-item *ngFor="let item of items" [ngClass]="getItemClass(item)" (click)="onItemClick(item)">
+          <span>{{item.name}}</span>  
+      </app-dropdown-item>
+    </div> 
+  </div>
+</div>

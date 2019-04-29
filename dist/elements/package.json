@@ -1,0 +1,18 @@
+{
+    "name": "angular-elements-dropdown",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "ng build",
+        "lint": "ng lint",
+        "e2e": "ng e2e",
+        "build:element": "ng build --prod --output-hashing=none && node build.js"
+    },
+    "private": true,
+    "author": "akhlesh.sims@gmail.com",
+    "repository": {
+        "type": "git"
+    },
+    "dependencies": {},
+    "devDependencies": {},
+    "main": "./ng-dropdown-element.js"
+}
