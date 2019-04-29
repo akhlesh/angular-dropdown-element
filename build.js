@@ -30,5 +30,6 @@ async function copyAndUpdateJson(){
     await copyAndUpdateJson();
     await fs.copy('./web-example', './dist/elements/demo');
     await fs.copy('./src/dropdown', './dist/elements/src');
+    await fs.copy('./README.md', './dist/elements/README.md');
     console.info('dropdown element created successfully!')
 })()
