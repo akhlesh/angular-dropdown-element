@@ -44,8 +44,8 @@ $ npm install angular-dropdown-element bootstrap
 | Input/Output | Description |
 | --- | --- |
 | items | array :-list of items |
-| value | any:- Dropdown value |
-| label | string or function:- used to get label value |
+| value | item:- dropdown value |
+| label | string or function:- to get label value |
 | placeholder | string :- placeholder value. Default: 'Please select an item' |  
 | valueChange | function:- gets called on value change. |
 
