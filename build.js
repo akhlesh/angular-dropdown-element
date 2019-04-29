@@ -7,7 +7,7 @@ async function copyAndUpdateJson(){
         if (err) console.error(err)
         packageObj.dependencies = {};
         packageObj.devDependencies = {};
-        packageObj.main = './ng-dropdown-element.js';
+        packageObj.main = './index.js';
       
         osfs.writeFile('./dist/elements/package.json', JSON.stringify(packageObj, null, 4), (e)=>{
             if (e) console.error(e);
@@ -26,7 +26,7 @@ async function copyAndUpdateJson(){
     
     await fs.ensureDir('dist/elements')
     
-    await concat(files, './dist/elements/ng-dropdown-element.js')
+    await concat(files, './dist/elements/index.js')
     await copyAndUpdateJson();
     await fs.copy('./web-example', './dist/elements/demo');
     await fs.copy('./src/dropdown', './dist/elements/src');

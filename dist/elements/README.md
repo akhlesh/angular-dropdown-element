@@ -21,10 +21,10 @@ $ npm install angular-elements-dropdown bootstrap
 </head>
 
 <body>
-  <div class="content">
+  <div class="container">
     <ng-dropdown-element label="name"></ng-dropdown-element>
   </div>
-  <script src="node_module/ng-dropdown-element/ng-dropdown-element.js"></script>
+  <script src="node_modules/ng-dropdown-element/index.js"></script>
   <script>
     var items = Array.from({ length: 50 }, (e, i) => ({ name: 'test name ' + i }));
     const el = document.querySelector('ng-dropdown-element');
@@ -45,5 +45,5 @@ $ npm install angular-elements-dropdown bootstrap
 | value | any:- Dropdown value |
 | label | string or function:- used to get label value |
 | placeholder | string :- placeholder value. Default: 'Please select an item' |  
-| valueChange | function:- gets called when value is change |
+| valueChange | function:- gets called on value change. |
 

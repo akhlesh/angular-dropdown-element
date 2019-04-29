@@ -1,5 +1,5 @@
 (function () {
-    var items = Array.from({ length: 50 }, (e, i) => ({ name: 'test name' + i }));
+    var items = Array.from({ length: 50 }, (e, i) => ({ name: 'test name ' + i }));
     const el = document.querySelector('ng-dropdown-element');
     el.items = items;
 
