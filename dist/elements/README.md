@@ -1,5 +1,5 @@
 # angular-dropdown-element
-AngularElement dropdown - a web component for dropdown
+[AngularElement](https://angular.io/guide/elements) dropdown 
 
 
 ## Installation
@@ -15,9 +15,8 @@ $ npm install angular-elements-dropdown bootstrap
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>AngularElementsDropdown</title>
+  <title>AngularElements Dropdown</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -33,7 +32,6 @@ $ npm install angular-elements-dropdown bootstrap
     el.addEventListener('valueChange', (e) => console.log(e.detail));
   </script>
 </body>
-
 </html>
 ```
 
