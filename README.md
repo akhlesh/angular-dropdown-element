@@ -2,8 +2,8 @@
 [AngularElement](https://angular.io/guide/elements) dropdown 
 
 ## Demo
-* Javascript - https://jsfiddle.net/Akhlesh/0jmdrzvh/3/
-* React - https://jsfiddle.net/Akhlesh/fvswda9L/
+* Javascript - https://jsfiddle.net/Akhlesh/0jmdrzvh/6/
+* React - https://jsfiddle.net/Akhlesh/fvswda9L/5/
 
 
 ## Installation
