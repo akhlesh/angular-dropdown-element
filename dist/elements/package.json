@@ -7,7 +7,7 @@
         "e2e": "ng e2e",
         "build:element": "ng build --prod --output-hashing=none && node build.js"
     },
-    "private": true,
+    "private": false,
     "author": "akhlesh.sims@gmail.com",
     "repository": {
         "type": "git"
