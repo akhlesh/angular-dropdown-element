@@ -5,7 +5,7 @@
 ## Installation
 
 ```bash
-$ npm install angular-elements-dropdown bootstrap
+$ npm install angular-dropdown-element bootstrap
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ $ npm install angular-elements-dropdown bootstrap
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>AngularElements Dropdown</title>
+  <title>Angular Dropdown Element</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 

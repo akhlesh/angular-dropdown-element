@@ -18,10 +18,10 @@ async function copyAndUpdateJson(){
 (async function build() {
 
     const files =[
-        'dist/angular-element-dropdown/runtime.js',
-        'dist/angular-element-dropdown/polyfills.js',
-        'dist/angular-element-dropdown/main.js',
-        'dist/angular-element-dropdown/scripts.js',
+        'dist/angular-dropdown-element/runtime.js',
+        'dist/angular-dropdown-element/polyfills.js',
+        'dist/angular-dropdown-element/main.js',
+        'dist/angular-dropdown-element/scripts.js',
     ]
     
     await fs.ensureDir('dist/package')
