@@ -5,7 +5,7 @@
   <div class="dropdown-menu"  [ngClass]="isOpen? 'show' : ''"> 
     <div class="dropdown-list">
       <app-dropdown-item *ngFor="let item of items" [ngClass]="getItemClass(item)" (click)="onItemClick(item)">
-          <span>{{item.name}}</span>  
+          <span>{{labelFn(item)}}</span>  
       </app-dropdown-item>
     </div> 
   </div>
