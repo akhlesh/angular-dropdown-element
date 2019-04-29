@@ -9,7 +9,7 @@ async function copyAndUpdateJson(){
         packageObj.devDependencies = {};
         packageObj.main = './index.js';
       
-        osfs.writeFile('./dist/elements/package.json', JSON.stringify(packageObj, null, 4), (e)=>{
+        osfs.writeFile('./dist/package/package.json', JSON.stringify(packageObj, null, 4), (e)=>{
             if (e) console.error(e);
         });
     });    
@@ -18,18 +18,18 @@ async function copyAndUpdateJson(){
 (async function build() {
 
     const files =[
-        'dist/angular-elements-dropdown/runtime.js',
-        'dist/angular-elements-dropdown/polyfills.js',
-        'dist/angular-elements-dropdown/main.js',
-        'dist/angular-elements-dropdown/scripts.js',
+        'dist/angular-element-dropdown/runtime.js',
+        'dist/angular-element-dropdown/polyfills.js',
+        'dist/angular-element-dropdown/main.js',
+        'dist/angular-element-dropdown/scripts.js',
     ]
     
     await fs.ensureDir('dist/elements')
     
     await concat(files, './dist/elements/index.js')
     await copyAndUpdateJson();
-    await fs.copy('./web-example', './dist/elements/demo');
-    await fs.copy('./src/dropdown', './dist/elements/src');
-    await fs.copy('./README.md', './dist/elements/README.md');
+    await fs.copy('./web-example', './dist/package/demo');
+    await fs.copy('./src/dropdown', './dist/package/src');
+    await fs.copy('./README.md', './dist/package/README.md');
     console.info('dropdown element created successfully!')
 })()

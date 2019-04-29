@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-elements-dropdown": {
+    "angular-element-dropdown": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-elements-dropdown",
+            "outputPath": "dist/angular-element-dropdown",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-elements-dropdown:build"
+            "browserTarget": "angular-element-dropdown:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-elements-dropdown:build:production"
+              "browserTarget": "angular-element-dropdown:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-elements-dropdown:build"
+            "browserTarget": "angular-element-dropdown:build"
           }
         },
         "test": {
@@ -111,7 +111,7 @@
         }
       }
     },
-    "angular-elements-dropdown-e2e": {
+    "angular-element-dropdown-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -120,11 +120,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-elements-dropdown:serve"
+            "devServerTarget": "angular-element-dropdown:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-elements-dropdown:serve:production"
+              "devServerTarget": "angular-element-dropdown:serve:production"
             }
           }
         },
@@ -140,5 +140,5 @@
       }
     }
   },
-  "defaultProject": "angular-elements-dropdown"
+  "defaultProject": "angular-element-dropdown"
 }
