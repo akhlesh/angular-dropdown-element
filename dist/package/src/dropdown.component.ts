@@ -5,6 +5,7 @@ import {
 } from '@angular/core';
 import { isString, identity, keys } from './utils';
 import { DropdownItem } from './dropdown-item.component';
+import { DomSanitizer } from '@angular/platform-browser';
 
 type fn = (item: any) => any;
 
@@ -19,6 +20,7 @@ export class DropdownComponent implements OnInit, OnDestroy, OnChanges {
   @Input() label: string | fn = identity;
   @Input() placeholder: string = 'Please select an item';
   @Output() valueChange = new EventEmitter();
+  @Input() itemRenderer: (item: any) => string = (item) => `<span>${this.labelFn(item)}</span>`;
   @ViewChildren(DropdownItem) dropdownItems: QueryList<DropdownItem>;
 
   activeIndex = -1;
@@ -27,8 +29,8 @@ export class DropdownComponent implements OnInit, OnDestroy, OnChanges {
   labelFn: Function;
   private hostElement: HTMLElement
 
-  constructor(elementRef: ElementRef) {
-    this.hostElement = elementRef.nativeElement;
+  constructor(elementRef: ElementRef, private sanitizer: DomSanitizer) {
+    this.hostElement = elementRef.nativeElement;        
   }
 
   ngOnInit() {
@@ -98,6 +100,10 @@ export class DropdownComponent implements OnInit, OnDestroy, OnChanges {
     return classList.join(' ').trim();
   }
 
+  getItemHtml(item) {
+    return this.sanitizer.bypassSecurityTrustHtml(this.itemRenderer(item));
+  }
+
   containsElement(element: HTMLElement) {
     return this.hostElement.contains(element);
   }
@@ -126,6 +132,7 @@ export class DropdownComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   ngOnDestroy() {
-
+    document.removeEventListener('click', this.documentClickHanlder);
   }
+
 }

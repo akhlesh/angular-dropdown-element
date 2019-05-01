@@ -2,8 +2,8 @@
 [AngularElement](https://angular.io/guide/elements) dropdown 
 
 ## Demo
-* Javascript - https://jsfiddle.net/Akhlesh/0jmdrzvh/6/
-* React - https://jsfiddle.net/Akhlesh/fvswda9L/5/
+* Javascript - https://jsfiddle.net/Akhlesh/0jmdrzvh/
+* React - https://jsfiddle.net/Akhlesh/fvswda9L/
 
 
 ## Installation
@@ -48,4 +48,6 @@ $ npm install angular-dropdown-element bootstrap
 | label | string or function:- to get label value |
 | placeholder | string :- placeholder value. Default: 'Please select an item' |  
 | valueChange | function:- gets called on value change. |
+| itemRenderer| function:- function to get html template for an item|
+
 
