@@ -2,10 +2,11 @@
     "name": "angular-dropdown-element",
     "version": "0.0.1",
     "scripts": {
-        "build": "ng build",
+        "start": "ng serve",
+        "build": "ng build --prod --output-hashing=none",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "build:element": "ng build --prod --output-hashing=none && node build.js"
+        "postbuild": "node build.js"
     },
     "private": false,
     "author": "akhlesh.sims@gmail.com",
