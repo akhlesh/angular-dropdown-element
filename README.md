@@ -1,4 +1,7 @@
 # angular-dropdown-element
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/akhlesh/angular-dropdown-element.svg)](https://greenkeeper.io/)
+
 [AngularElement](https://angular.io/guide/elements) dropdown 
 
 ## Demo
